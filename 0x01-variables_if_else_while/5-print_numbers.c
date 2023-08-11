@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	int chr;
+	char chr;
 
-	for (chr = 0; chr < 10; chr++)
+	for (chr = '0'; chr <= '9'; chr++)
 	{
 		putchar(chr);
 	}
