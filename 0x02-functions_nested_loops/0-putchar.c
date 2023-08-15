@@ -1,6 +1,5 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <main.h>
 /**
  * main - entry point
  *
@@ -8,6 +7,6 @@
  */
 int main(void)
 {
-	printf("_putchar");
+	myFunc();
 	return (0);
 }
