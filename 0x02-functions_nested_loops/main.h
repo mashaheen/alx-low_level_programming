@@ -1,10 +1,4 @@
-#include <stdio.h>
 #include "functions.h"
-/**
- * myFunc - entry point
- *
- * Return: void
- */
 
 void myFunc(void)
 {
