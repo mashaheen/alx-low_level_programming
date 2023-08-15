@@ -4,8 +4,6 @@
  *
  * Return: void
  */
-void myFunc(void);
-void print_alphabet(void);
 
 void myFunc(void)
 {
