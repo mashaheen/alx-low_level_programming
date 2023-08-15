@@ -6,5 +6,5 @@
  */
 void myFunc(void)
 {
-	printf("_putchar");
+	printf("_putchar\n");
 }
