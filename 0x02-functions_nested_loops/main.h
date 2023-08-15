@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "functions.h"
 /**
  * myFunc - entry point
  *

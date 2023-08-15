@@ -1,5 +1,4 @@
 #include <stdio.h>
-void myFunc(void);
 #include "./main.h"
 /**
  * main - entry point
