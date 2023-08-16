@@ -10,12 +10,12 @@ int print_sign(int c)
 	if (c > 0)
 	{
 		putchar ('+');
-		return ('1');
-	} else if (c > 0)
+		return (1);
+	} else if (c < 0)
 	{
 		putchar ('-');
-		return ('-1');
+		return (-1);
 	}
 	putchar ('0');
-	return ('0');
+	return (0);
 }
