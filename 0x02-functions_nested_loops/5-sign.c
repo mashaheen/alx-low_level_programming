@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * _print_sign - print alphabet
+ * print_sign - print alphabet
  * @c: Description of parameter x
  *
  * Return: 1 if the number is lowercase. 0 otherwise
