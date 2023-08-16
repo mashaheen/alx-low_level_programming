@@ -5,7 +5,7 @@
  *
  * Return: 1 if the number is lowercase. 0 otherwise
  */
-int _print_sign(int c)
+int print_sign(int c)
 {
 	if (c > 0)
 	{
