@@ -11,12 +11,18 @@ char *cap_string(char *p)
 
 	while (*start != '\0')
 	{
-		if(start == P)
+		if(start == p)
 		{
-			*start = *start - 32;
+			if(*start >= 'a' && *start <= 'z')
+			{
+				*start = *start - 32;
+			}
 		} else if (!((*(start - 1) >= 'a' && *(start - 1) <= 'z') || (*(start - 1) >= 'A' && *(start-1) <= 'Z')))
 		{
-		       	if (((*(start) >= 'a' && *(start) <= 'z') || (*(start) >= 'A' && *(start) <= 'Z')))
+			if (*(start -1) >= '0' && *(start - 1) <= '9')
+			{
+
+			} else if (((*(start) >= 'a' && *(start) <= 'z')))
 			{
 				*start = *start -32;
 			}
