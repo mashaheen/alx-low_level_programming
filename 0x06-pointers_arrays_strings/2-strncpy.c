@@ -7,27 +7,27 @@
  *
  * Return: pointer to newchar
  */
-char *_strncpy(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n)
 {
-	char *temp = dest;
-	char *second = src;
+	char *des = dest;
+	char *sr = src;
 	int i = 0;
 
-	while (*second != '\0')
+	while (*sr != '\0')
 	{
 		if (i >= n)
 		{
-			*temp = '*';
+			*des = '*';
 		} else
 		{
-			*temp = *second;
+			*des = *sr;
 		}
-		second++;
-		temp++;
+		sr++;
+		des++;
 		i++;
 	}
-	*temp = '\0';
-	temp = dest;
+	*des = '\0';
+	des = dest;
 
-	return (temp);
+	return (des);
 }
