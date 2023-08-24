@@ -4,7 +4,6 @@
  * @a: argument description
  * @n: argument
  *
- * Return: pointer to newchar
  */
 void reverse_array(int *a, int n)
 {
@@ -12,12 +11,11 @@ void reverse_array(int *a, int n)
 	int end = n - 1;
 	int temp;
 
-	for (i = 0; i <= (n/2); i++)
+	for (i = 0; i <= (n / 2); i++)
 	{
 		temp = *(a + i);
 		*(a + i) = *(a + end);
 		*(a + end) = temp;
 		end--;
 	}
-	return;
 }
