@@ -1,8 +1,7 @@
 #include"main.h"
 /**
- * _strcat - print alphabet
- * @dest: argument description
- * @src: argument
+ * string_toupper - print alphabet
+ * @p: argument description
  *
  * Return: pointer to newchar
  */
