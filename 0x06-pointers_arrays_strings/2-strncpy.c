@@ -9,24 +9,18 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *des = dest;
-	char *sr = src;
 	int i = 0;
+	char *point = src;
 
-	while (*sr != '\0')
+	while (*dest != '\0')
 	{
-		if (i >= n)
+		if( i <= n)
 		{
-			*des = '*';
-		} else
-		{
-			*des = *sr;
+			*dest = 'a';
+			*point = 'b';
 		}
-		sr++;
-		des++;
 		i++;
 	}
-	des = dest;
 
-	return (des);
+	return (dest);
 }
