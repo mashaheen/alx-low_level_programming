@@ -1,10 +1,10 @@
 #include"main.h"
 /**
- * _strchr - print alphabet
- * @s: argument description
- * @c: argument
+ * _strchr - find the first occurance of a letter
+ * @s: pointer to first letter of string
+ * @c: target letter
  *
- * Return: pointer to newchar
+ * Return: pointer of target letter
  */
 char *_strchr(char *s, char c)
 {
@@ -16,5 +16,9 @@ char *_strchr(char *s, char c)
 		}
 		s++;
 	}
-	return  (s);
+	if (c == '\0')
+	{
+		return  (s);
+	}
+	return (NULL);
 }
