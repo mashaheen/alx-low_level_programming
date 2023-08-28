@@ -20,10 +20,8 @@ char *_strpbrk(char *s, char *accept)
 		if (*temp == *s)
 		{
 			return (s);
-		} else
-		{
-			temp++;
 		}
+		temp++;
 	}
 	return (NULL);
 }
