@@ -1,31 +1,29 @@
 #include"main.h"
 /**
- * _strspn - print alphabet
+ * _strpbrk - print alphabet
  * @s: argument description
  * @accept: argument
  *
  * Return: pointer to newchar
  */
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	char *temp = accept;
-	unsigned int size = 0;
 
 	while (*s != '\0')
 	{
 		if (*temp == '\0')
 		{
-			return (size);
+			temp = accept;
+			s++;
 		}
 		if (*temp == *s)
 		{
-			size++;
-			s++;
-			temp = accept;
+			return (s);
 		} else
 		{
 			temp++;
 		}
 	}
-	return (size);
+	return (s);
 }
