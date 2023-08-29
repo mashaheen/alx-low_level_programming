@@ -13,22 +13,23 @@ char *_strstr(char *haystack, char *needle)
 
 	while (*haystack != '\0')
 	{
-		while (*temp != '\0')
+		if (*temp == '\0')
 		{
-			if (*temp == *haystack)
+			return (start);
+		}
+		if (*temp == *haystack)	
+		{
+			if (start == NULL)
 			{
-				if (start != NULL)
-				{
-					start = haystack;
-				}
-				temp++;
-				haystack++
-			} else
-			{
-				start = NULL;
-				haystack++;
-				temp = needle;
+				start = haystack;
 			}
+			temp++;
+			haystack++;
+		} else
+		{
+			start = NULL;
+			haystack++;
+			temp = needle;
 		}
 	}
 	return (start);
