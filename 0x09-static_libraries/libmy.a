@@ -1,0 +1,453 @@
+!<arch>
+0-isupper.o/    0           0     0     644     213       `
+#include"main.h"
+/**
+ * _isupper - print alphabet
+ * @c: argument description
+ *
+ * Return: 1 if is alphaet, and z otherwise
+ */
+int _isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	return (0);
+}
+
+0-memset.o/     0           0     0     644     295       `
+#include"main.h"
+/**
+ * _memset - print alphabet
+ * @s: argument description
+ * @b: argument
+ * @n: number
+ *
+ * Return: pointer to newchar
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	char *temp = s;
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+		*s = b;
+		s++;
+	}
+
+	return (temp);
+}
+
+0-strcat.o/     0           0     0     644     375       `
+#include"main.h"
+/**
+ * _strcat - print alphabet
+ * @dest: argument description
+ * @src: argument
+ *
+ * Return: pointer to newchar
+ */
+char *_strcat(char *dest, char *src)
+{
+	char *temp = dest;
+	char *second = src;
+
+	while (*temp != '\0')
+	{
+		temp++;
+	}
+	while (*second != '\0')
+	{
+		*temp = *second;
+		second++;
+		temp++;
+	}
+	*temp = '\0';
+	temp = dest;
+
+	return (temp);
+}
+
+1-isdigit.o/    0           0     0     644     213       `
+#include"main.h"
+/**
+ * _isdigit - print alphabet
+ * @c: argument description
+ *
+ * Return: 1 if is alphaet, and z otherwise
+ */
+int _isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+	{
+		return (1);
+	}
+	return (0);
+}
+
+1-memcpy.o/     0           0     0     644     327       `
+#include"main.h"
+/**
+ * _memcpy - print alphabet
+ * @dest: argument description
+ * @src: argument
+ * @n: number
+ *
+ * Return: pointer to newchar
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	char *temp = dest;
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+		*dest = *src;
+		src++;
+		dest++;
+	}
+
+	return (temp);
+}
+
+1-strncat.o/    0           0     0     644     454       `
+#include"main.h"
+/**
+ * _strncat - print alphabet
+ * @dest: argument description
+ * @src: argument
+ * @n: number of letters in second string
+ *
+ * Return: pointer to newchar
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+	char *temp = dest;
+	char *second = src;
+	int i = 0;
+
+	while (*temp != '\0')
+	{
+		temp++;
+	}
+	while (*second != '\0' && i < n)
+	{
+		*temp = *second;
+		second++;
+		temp++;
+		i++;
+	}
+	*temp = '\0';
+	temp = dest;
+
+	return (temp);
+}
+100-atoi.o/     0           0     0     644     165       `
+#include"main.h"
+/**
+ * _isupper - print alphabet
+ * @c: argument description
+ *
+ * Return: 1 if is alphaet, and z otherwise
+ */
+int _atoi(char *s)
+{
+	return (0);
+}
+
+2-strchr.o/     0           0     0     644     335       `
+#include"main.h"
+/**
+ * _strchr - find the first occurance of a letter
+ * @s: pointer to first letter of string
+ * @c: target letter
+ *
+ * Return: pointer of target letter
+ */
+char *_strchr(char *s, char c)
+{
+	while (*s != '\0')
+	{
+		if (*s == c)
+		{
+			return (s);
+		}
+		s++;
+	}
+	if (c == '\0')
+	{
+		return  (s);
+	}
+	return (NULL);
+}
+
+2-strlen.o/     0           0     0     644     217       `
+#include"main.h"
+/**
+ * _strlen - print alphabet
+ * @s: argument description
+ *
+ * Return: counter for strlen
+ */
+int _strlen(char *s)
+{
+	int count = 0;
+
+	while (*s != '\0')
+	{
+		count++;
+		s++;
+	}
+	return (count);
+}
+
+2-strncpy.o/    0           0     0     644     368       `
+#include"main.h"
+/**
+ * _strncpy - print alphabet
+ * @dest: argument description
+ * @src: argument
+ * @n: number of letters in second string
+ *
+ * Return: pointer to newchar
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	int i = 0;
+	char *point = src;
+
+	while (*dest != '\0')
+	{
+		if( i <= n)
+		{
+			*dest = 'a';
+			*point = 'b';
+		}
+		i++;
+	}
+
+	return (dest);
+}
+3-islower.o/    0           0     0     644     228       `
+#include"main.h"
+/**
+ * _islower - print alphabet
+ * @c: Description of parameter x
+ *
+ * Return: 1 if the number is lowercase. 0 otherwise
+ */
+int _islower(int c)
+{
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	return (0);
+}
+3-puts.o/       0           0     0     644     191       `
+#include"main.h"
+/**
+ * _puts - print alphabet
+ * @str: argument desc
+ *
+ * Return: void
+ */
+void _puts(char *str)
+{
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
+}
+
+3-strcmp.o/     0           0     0     644     414       `
+#include"main.h"
+/**
+ * _strcmp - print alphabet
+ * @s1: argument description
+ * @s2: argument
+ *
+ * Return: pointer to newchar
+ */
+int _strcmp(char *s1, char *s2)
+{
+	while (*s1 != '\0')
+	{
+		if (*(s1 + 1) == '\0' && *(s2 + 1) != '\0')
+		{
+			return (*(s2 + 1) * -1);
+		}
+		if (*s2 == '\0')
+		{
+			return (*s1);
+		}
+		if (*s1 == *s2)
+		{
+			s1++;
+			s2++;
+		} else
+		{
+			return (*s1 - *s2);
+		}
+	}
+	return (0);
+}
+3-strspn.o/     0           0     0     644     407       `
+#include"main.h"
+/**
+ * _strspn - print alphabet
+ * @s: argument description
+ * @accept: argument
+ *
+ * Return: pointer to newchar
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+	char *temp = accept;
+	unsigned int size = 0;
+
+	while (*s != '\0')
+	{
+		if (*temp == '\0')
+		{
+			return (size);
+		}
+		if (*temp == *s)
+		{
+			size++;
+			s++;
+			temp = accept;
+		} else
+		{
+			temp++;
+		}
+	}
+	return (size);
+}
+
+4-isalpha.o/    0           0     0     644     252       `
+#include"main.h"
+/**
+ * _isalpha - print alphabet
+ * @c: Description of parameter x
+ *
+ * Return: 1 if the number is alpha. 0 otherwise
+ */
+int _isalpha(int c)
+{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	{
+		return (1);
+	}
+	return (0);
+}
+4-strpbrk.o/    0           0     0     644     350       `
+#include"main.h"
+/**
+ * _strpbrk - print alphabet
+ * @s: argument description
+ * @accept: argument
+ *
+ * Return: pointer to newchar
+ */
+char *_strpbrk(char *s, char *accept)
+{
+	char *temp = accept;
+
+	while (*s != '\0')
+	{
+		if (*temp == '\0')
+		{
+			temp = accept;
+			s++;
+		}
+		if (*temp == *s)
+		{
+			return (s);
+		}
+		temp++;
+	}
+	return (NULL);
+}
+5-strstr.o/     0           0     0     644     509       `
+#include"main.h"
+/**
+ * _strstr - print alphabet
+ * @haystack: argument description
+ * @needle: argument
+ *
+ * Return: pointer to newchar
+ */
+char *_strstr(char *haystack, char *needle)
+{
+	char *start = NULL;
+	char *temp = needle;
+
+	while (*haystack != '\0')
+	{
+		if (*temp == '\0')
+		{
+			return (start);
+		}
+		if (*temp == *haystack)
+		{
+			if (start == NULL)
+			{
+				start = haystack;
+			}
+			temp++;
+			haystack++;
+		} else
+		{
+			start = NULL;
+			haystack++;
+			temp = needle;
+		}
+	}
+	return (start);
+}
+
+6-abs.o/        0           0     0     644     210       `
+#include"main.h"
+/**
+ * _abs - print alphabet
+ * @c: Description of parameter x
+ *
+ * Return: 1 if the number is lowercase. 0 otherwise
+ */
+int _abs(int c)
+{
+	if (c < 0)
+	{
+		return (c * -1);
+	}
+	return (c);
+}
+9-strcpy.o/     0           0     0     644     194       `
+#include"main.h"
+/**
+ * _isupper - print alphabet
+ * @c: argument description
+ *
+ * Return: 1 if is alphaet, and z otherwise
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	return (dest);
+}
+_putchar.o/     0           0     0     644     154       `
+#include"main.h"
+/**
+ * _isupper - print alphabet
+ * @c: argument description
+ *
+ * Return: 1 if is alphaet, and z otherwise
+ */
+void _puts(char *s)
+{
+
+}
