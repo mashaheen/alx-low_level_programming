@@ -1,6 +1,6 @@
 #include"main.h"
 #include<stdlib.h>
-#include<String.h>
+#include<string.h>
 /**
  * _strdup - print alphabet
  * @str: argument description
