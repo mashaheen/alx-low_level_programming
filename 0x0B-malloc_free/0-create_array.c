@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdlib.h>
 /**
  * create_array - print alphabet
  * @size: argument description
@@ -8,13 +9,13 @@
  */
 char *create_array(unsigned int size, char c)
 {
+	unsigned int i;
+	char *array;
+
 	if (size == 0)
 	{
 		return (NULL);
 	}
-	char *array;
-	int i;
-
 	array = malloc(sizeof(char) * size);
 	if (array == NULL)
 	{
