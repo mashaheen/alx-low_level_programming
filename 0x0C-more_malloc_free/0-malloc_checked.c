@@ -1,6 +1,4 @@
 #include"main.h"
-#include<stdlib.h>
-#include<string.h>
 /**
  * malloc_checked - print alphabet
  * @b: argument description
