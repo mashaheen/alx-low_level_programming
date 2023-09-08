@@ -1,12 +1,11 @@
 #include"main.h"
 #include<stdlib.h>
-#include<string.h>
 /**
- * _calloc - print alphabet
+ * _calloc - func
  * @nmemb: argument description
  * @size: argument description
  *
- * Return: pointer to newchar
+ * Return: return
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
