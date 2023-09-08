@@ -1,5 +1,4 @@
 #include"main.h"
-#include<stdlib.h>
 /**
  * _calloc - func
  * @nmemb: argument description
