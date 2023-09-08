@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * string_nconcat -fun
  * @s1:argument 1
