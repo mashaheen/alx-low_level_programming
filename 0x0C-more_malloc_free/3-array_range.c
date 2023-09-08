@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * array_arrange - func
+ * array_range - func
  * @min: argument description
  * @max: argument description
  *
@@ -10,14 +10,14 @@ int *array_range(int min, int max)
 {
 	int *p;
 	int size;
-       	int i;
+	int i;
 
 	if (min > max)
 	{
 		return (NULL);
 	}
 	size = (max - min) + 1;
-	p = malloc(size);
+	p = malloc(size * sizeof(*p));
 	if (p == NULL)
 	{
 		return (NULL);
@@ -29,5 +29,4 @@ int *array_range(int min, int max)
 		min++;
 	}
 	return (p);
-
 }
