@@ -1,9 +1,9 @@
 #ifndef DOG_A
 #define DOG_A
 /**
- * struct dog - dog 
- * @name: name 
- * @age: age 
+ * struct dog - dog
+ * @name: name
+ * @age: age
  * @owner: owner
  *
  * Description: Defines dog
