@@ -1,4 +1,4 @@
-#include"main.h"
+#include"variadic_functions.h"
 /**
  * sum_them_all - get the sum of all args
  * @n: number of arguments
