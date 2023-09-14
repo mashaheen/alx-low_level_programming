@@ -19,7 +19,7 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		int x = va_arg(args, int);
 
-		if (typeof(x) == int)
+		if ((x) % 1 == 0)
 		{
 			sum += va_arg(args, int);
 		}
