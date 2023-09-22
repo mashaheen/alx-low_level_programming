@@ -10,7 +10,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	int i, len;
 	char *dupstr;
 	list_t *newhead;
-	list_t *last;
 	list_t *temp;
 
 	if (str == NULL || head == NULL)
