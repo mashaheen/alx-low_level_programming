@@ -2,7 +2,7 @@
 /**
   * add_node - add new nodes to the list
   * @head: head
-  * @str: string 
+  * @str: string
   * Return: pointer
   */
 list_t *add_node(list_t **head, const char *str)
