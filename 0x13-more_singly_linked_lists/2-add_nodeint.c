@@ -2,7 +2,7 @@
 /**
   * add_nodeint - add new nodes to the list
   * @head: head
-  * @int: int
+  * @n: int
   * Return: pointer
   */
 listint_t *add_nodeint(listint_t **head, const int n)
