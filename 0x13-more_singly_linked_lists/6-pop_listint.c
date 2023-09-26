@@ -2,7 +2,7 @@
 /**
   * pop_listint - frees a linked list
   * @head: the beginning of the list
-  * Return : value of first head
+  * Return: value of first head
   */
 int pop_listint(listint_t **head)
 {
@@ -11,14 +11,15 @@ int pop_listint(listint_t **head)
 
 	if (head == NULL)
 		return (0);
-	value = (*head)->n;
 	tmp = *head;
-	if ((*head)->next)
+	if (*head)
 	{
 		*head = (*head)->next;
+		value = (*head)->n;
 		free(tmp);
 	} else
 	{
+		value = 0;
 		free(*head);
 	}
 	return (value);
