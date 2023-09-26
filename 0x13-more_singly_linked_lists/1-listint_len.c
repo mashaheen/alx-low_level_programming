@@ -1,11 +1,11 @@
 #include "lists.h"
 /**
-  * list_len -  list_t list
-  * @h: list to print
+  * listint_len -  list_t list
+  * @h: list to count
   *
   * Return: number of nodes
 */
-size_t list_len(const list_t *h)
+size_t listint_len(const listint_t *h)
 {
 	size_t counter;
 
