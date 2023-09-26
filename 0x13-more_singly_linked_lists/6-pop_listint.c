@@ -2,6 +2,7 @@
 /**
   * pop_listint - frees a linked list
   * @head: the beginning of the list
+  * Return : value of first head
   */
 int pop_listint(listint_t **head)
 {
@@ -16,6 +17,9 @@ int pop_listint(listint_t **head)
 	{
 		*head = (*head)->next;
 		free(tmp);
+	} else
+	{
+		free(*head);
 	}
-	return value;
+	return (value);
 }
