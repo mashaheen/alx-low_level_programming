@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	read_status = 1;
 	while (letters > BUFFERSIZE && read_status != 0)
 	{
-		read_status = read(txt_file, buffer, BUFSIZE);
+		read_status = read(txt_file, buffer, BUFFERSIZE);
 		write(STDOUT_FILENO, buffer, read_status);
 		total += read_status;
 		letters -= BUFFERSIZE;
